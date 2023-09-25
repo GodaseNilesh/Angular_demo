@@ -1,0 +1,9 @@
+<h1 appRedElement>Hello {{title}}</h1>
+<h2 *ngIf="bool">{{getval()}}</h2>
+<app-login></app-login>
+<app-login></app-login>
+
+<div [ngSwitch]="bool">
+  <div *ngSwitchCase="true">This is true</div>
+  <div *ngSwitchCase="false">This is false</div>
+</div>
